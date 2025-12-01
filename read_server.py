@@ -2,10 +2,10 @@ import re
 import zmq
 
 context = zmq.Context()
-PORT = 5557                     # Unique port
-SEPARATOR = b'\x21'             # Same '!' char as before
+PORT = 5557                     
+SEPARATOR = b'\x21'             
 
-# Same filename regex as the original
+
 PATTERN = re.compile(r"^[\w\-()\[\]\.\ ]*[\w\-()\[\]]$")
 
 
